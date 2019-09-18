@@ -23,6 +23,7 @@
   stage('archive'){
       steps{
     archiveArtifacts 'target/*.jar'
+    echo 'oi'
     }
     }
   }

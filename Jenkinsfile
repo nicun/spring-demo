@@ -20,5 +20,10 @@
   bat label: '', script: 'call mvn clean package'
   }
   }
+  stage('archive'){
+      steps{
+    archiveArtifacts 'target/*.jar'
+    }
+    }
   }
   }
